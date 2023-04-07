@@ -1,0 +1,105 @@
+#footer-wrap
+  #ft
+    .ft-item-1
+      .t-top
+        .t-t-l
+          p.ft-t.t-l-t 格言🧬
+          .bg-ad
+            div
+              | 再看看那个光点，它就在这里，这是家园，这是我们 —— 你所爱的每一个人，你认识的一个人，你听说过的每一个人，曾经有过的每一个人，都在它上面度过他们的一生✨
+            .btn-xz-box
+              a.btn-xz(href='https://stellarium.org/') 点击开启星辰之旅
+        .t-t-r
+          p.ft-t.t-l-t 猜你想看💡
+          ul.ft-links
+            li
+              a(href='https://space.bilibili.com/516951032?spm_id_from=333.1007.0.0') 晓寒b站
+              a(href='https://openai.com/') openai官网
+            li
+              a(href='https://akas-status.zeabur.app/status/kuma123') 网站状态
+              a(href='/comments/') 留点什么
+            li
+              a(href='/personal/about/') 关于作者
+              a(href='/archives/') 文章归档
+            li
+              a(href='/categories/') 文章分类
+              a(href='/tags/') 文章标签
+            li
+              a(href='/site/charts/') 文章统计
+              a(href='/personal/bb/') 我的唠叨
+            li
+              a(href='/site/time/') 建设进程
+              a(href='/site/census/') 网站统计
+    .ft-item-2
+      p.ft-t 推荐友链⌛
+      .ft-img-group
+        .img-group-item
+          a(href='https://www.fomal.cc/' title='Fomalhaut🥝')
+            img(src='https://lskypro.acozycotage.net/LightPicture/2022/12/60e5d4e39da7c077.webp' alt='')
+        .img-group-item
+          a(href='' title='广告位招租')
+            img(src='https://lskypro.acozycotage.net/LightPicture/2022/12/65307a5828af6790.webp' alt='')
+        .img-group-item
+          a(href='javascript:void(0)' title='广告位招租')
+            img(src='https://lskypro.acozycotage.net/LightPicture/2022/12/65307a5828af6790.webp' alt='')
+        .img-group-item
+          a(href='javascript:void(0)' title='广告位招租')
+            img(src='https://lskypro.acozycotage.net/LightPicture/2022/12/65307a5828af6790.webp' alt='')
+        .img-group-item
+          a(href='javascript:void(0)' title='广告位招租')
+            img(src='https://lskypro.acozycotage.net/LightPicture/2022/12/65307a5828af6790.webp' alt='')
+        .img-group-item
+          a(href='javascript:void(0)' title='广告位招租')
+            img(src='https://lskypro.acozycotage.net/LightPicture/2022/12/65307a5828af6790.webp' alt='')
+        .img-group-item
+          a(href='javascript:void(0)' title='广告位招租')
+            img(src='https://lskypro.acozycotage.net/LightPicture/2022/12/65307a5828af6790.webp' alt='')
+        .img-group-item
+          a(href='javascript:void(0)' title='广告位招租')
+            img(src='https://lskypro.acozycotage.net/LightPicture/2022/12/65307a5828af6790.webp' alt='')
+
+  if theme.footer.owner.enable
+    - var now = new Date()
+    - var nowYear = now.getFullYear()
+    //- if theme.footer.owner.since && theme.footer.owner.since != nowYear
+    //-   .copyright!= `&copy;${theme.footer.owner.since} - ${nowYear} By ${config.author}`
+    //- else
+    //-   .copyright!= `&copy;${nowYear} By ${config.author}`
+    //- 新加的
+    if theme.footer.owner.since && theme.footer.owner.since != nowYear
+      .copyright
+        span!= `<b>&copy;${theme.footer.owner.since}-${nowYear}</b>`
+        span!= `<b>&nbsp;&nbsp;By ${config.author}</b>`
+    else
+       .copyright
+         span!= `<b>&copy;${nowYear}</b>`
+         span!= `<b>&nbsp;&nbsp;By ${config.author}</b>`
+    //- 到这里
+  if theme.footer.copyright
+    .framework-info
+      span= _p('footer.framework') + ' '
+      a(href='https://hexo.io')= 'Hexo'
+      span.footer-separator |
+      span= _p('footer.theme') + ' '
+      a(href='https://github.com/jerryc127/hexo-theme-butterfly')= 'Butterfly'
+  if theme.footer.custom_text
+    .footer_custom_text!=`${theme.footer.custom_text}`
+  #workboard
+  p#ghbdages
+    a.github-badge(target='_blank' href="https://hexo.io/" style='margin-inline:5px' title="博客框架为Hexo_v6.3.0")
+      img(src="https://sourcebucket.s3.ladydaily.com/badge/Frame-Hexo-blue.svg" alt='')
+
+    a.github-badge(target='_blank' href="https://butterfly.js.org/" style='margin-inline:5px' title="主题版本Butterfly_v4.3.1")
+      img(src="https://sourcebucket.s3.ladydaily.com/badge/Theme-Butterfly-6513df.svg" alt='')
+
+    a.github-badge(target='_blank' href="https://vercel.com/" style='margin-inline:5px' title="本站评论区及其他功能系统由Vercel托管")
+      img(src="https://sourcebucket.s3.ladydaily.com/badge/Hosted-Vercel-brightgreen.svg" alt='')
+
+    a.github-badge(target='_blank' href="https://github.com/" style='margin-inline:5px' title="本网站源码由Github提供存储仓库并提供托管服务")
+      img(src=" https://sourcebucket.s3.ladydaily.com/badge/Source-Github-d021d6.svg" alt='')
+
+    a.github-badge(target='_blank' href="http://creativecommons.org/licenses/by-nc-sa/4.0/" style='margin-inline:5px' title="本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可")
+      img(src="https://sourcebucket.s3.ladydaily.com/badge/Copyright-BY--NC--SA--4.svg" alt='')
+
+    a.github-badge(target='_blank' href="http://creativecommons.org/licenses/by-nc-sa/4.0/" style='margin-inline:5px' title="本站已接入基于uptime kuma搭建的网站监控系统")
+      img(src="https://img.shields.io/badge/uptime-uptimekuma-brightgreen?logo=" alt='')
