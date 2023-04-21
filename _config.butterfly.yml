@@ -11,6 +11,8 @@ menu:
   八宝箱 || icon-xiangzi || faa-tada || hide:
     网址导航: /box/nav/ || icon-zhifengche || faa-tada
     chatgpt对话专业版: https://chat-gpt-jcm-alpha-self.vercel.app/ || icon-wuguan || faa-tada
+    晓寒の网盘: https://alistpan.onrender.com/
+    晓寒博客: https://akas-xiaohanblog.zeabur.app/
   社交 || icon-shejiaoxinxi || faa-tada || hide:
     留言板: /comments/ || icon-liuyan || faa-tada
     友人帐: /social/link/ || icon-lianjie || faa-tada
@@ -52,7 +54,7 @@ social:
   # 力扣: https://leetcode.cn/u/fomalhaut1998 || icon-leetcode || faa-tada
   微博: https://weibo.com/u/7819559836 || icon-weibo || faa-tada
   # 知乎: https://www.zhihu.com/people/liang-jia-chao-19 || icon-shejiaotubiao-10 || faa-tada
-  # RSS: /atom.xml || icon-RSS || faa-tada
+  RSS: /atom.xml || icon-RSS || faa-tada
 
   # iconfont icon-github: https://github.com/fomalhaut1998 || Github
   # iconfont icon-youjian: mailto:1174008660@qq.com || QQ邮箱
@@ -220,9 +222,9 @@ reward:
     - img: https://s2.loli.net/2023/03/30/MDoZnp54Adq7ygT.jpg
       link:
       text: 微信
-    - img: 
-      link:
-      text: 爱发电（maybe）
+    - img: https://s1.ax1x.com/2023/04/20/p9kZetH.jpg
+      link: https://afdian.net/a/Dreamkaka
+      text: 爱发电
 
 # Post edit
 # Easily browse and edit blog source code online.
